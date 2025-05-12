@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "NetTools (Package)": {
+      "commandName": "MsixPackage",
+      "doNotLaunchApp": true
+    },
+    "NetTools (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+// NetToolsCommandsProvider.cs
+using Microsoft.CommandPalette.Extensions.Toolkit;
+using Microsoft.CommandPalette.Extensions;
+using NetTools.Pages;
+
+namespace NetTools;
+
+public partial class NetToolsCommandsProvider : CommandProvider
+{
+    private readonly ICommandItem[] _commands;
+
+    public NetToolsCommandsProvider()
+    {
+        DisplayName = "NetTools";
+        Icon = new IconInfo("\uEC7A");
+
+        _commands = new ICommandItem[]
+        {
+            // Één top-level item
+            new CommandItem(new NetToolsPage())
+            {
+                Title    = "NetTools",
+                Subtitle = "Verzameling van netwerktools",
+                Icon     = new IconInfo("\uEC7A")
+            }
+        };
+    }
+
+    public override ICommandItem[] TopLevelCommands() => _commands;
+}
