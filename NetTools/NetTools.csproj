@@ -13,8 +13,8 @@
     <PublishProfile>win-$(Platform).pubxml</PublishProfile>
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
-	<UseWinUI>true</UseWinUI>
-    <EnableWindowsAppSdk>true</EnableWindowsAppSdk>
+<!--<UseWinUI>true</UseWinUI>
+    <EnableWindowsAppSdk>true</EnableWindowsAppSdk> -->
   </PropertyGroup>
   <ItemGroup>
     <Page Remove="pages\App.xaml" />
@@ -28,7 +28,9 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
-	<Content Include="Assets\SpeedTest.exe" />
+    <Content Include="Assets\SpeedTest.exe">
+     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -51,6 +53,7 @@
 	<PackageReference Include="Microsoft.Windows.SDK.BuildTools" />
 	<PackageReference Include="Microsoft.WindowsAppSDK" />
     <PackageReference Include="Microsoft.Web.WebView2" />
+    <PackageReference Include="NetPace.Core" />
     <PackageReference Include="System.Text.Json" />
     <PackageReference Include="Shmuelie.WinRTServer" />
 	<PackageReference Include="Microsoft.Windows.CsWin32">

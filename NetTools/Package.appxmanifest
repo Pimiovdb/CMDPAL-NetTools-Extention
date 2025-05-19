@@ -11,7 +11,7 @@
   <Identity
     Name="NetTools"
     Publisher="CN=PimNoordhoek-VBVB"
-    Version="0.0.57.0" />
+    Version="0.0.74.0" />
   <!-- When you're ready to publish your extension, you'll need to change the
        Publisher= to match your own identity -->
 

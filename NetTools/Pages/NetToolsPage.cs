@@ -20,23 +20,18 @@ namespace NetTools.Pages
         {
             return new IListItem[]
             {
-            // Bestaande CLI-variant
                 new ListItem(new SpeedTestCommand())
                 {
                     Title    = "Run Speedtest (CLI)",
                     Subtitle = "Meet internetsnelheid",
                     Icon     = new IconInfo("\uEC4A")
                 },
-
-                // ★ Nieuwe grafische variant ★
-                new ListItem(new OpenSpeedTestWindowCommand())
+                new ListItem(new SpeedTestPage())
                 {
-                    Title    = "Run SpeedTest (WinUI 3)",
+                    Title    = "Run SpeedTest (GUI)",
                     Subtitle = "WinUI 3 in eigen venster",
                     Icon     = new IconInfo("\uEC4A")
                 },
-
-                // Overige items
                 new ListItem(new IpPage())
                 {
                     Title    = "Check IP",
