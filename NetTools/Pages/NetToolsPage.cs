@@ -1,5 +1,4 @@
-﻿//NetToolsPage.cs
-using Microsoft.CommandPalette.Extensions;
+﻿using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
 using NetTools.Pages;
 using NetTools.Commands;

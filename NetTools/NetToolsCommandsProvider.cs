@@ -1,4 +1,3 @@
-// NetToolsCommandsProvider.cs
 using Microsoft.CommandPalette.Extensions.Toolkit;
 using Microsoft.CommandPalette.Extensions;
 using NetTools.Pages;
@@ -16,7 +15,6 @@ public partial class NetToolsCommandsProvider : CommandProvider
 
         _commands = new ICommandItem[]
         {
-            // …Èn top-level item
             new CommandItem(new NetToolsPage())
             {
                 Title    = "NetTools",
