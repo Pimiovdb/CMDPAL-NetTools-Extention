@@ -1,7 +1,7 @@
 ﻿using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
 using NetTools.Pages;
-using NetTools.Commands;
+
 
 
 namespace NetTools.Pages
@@ -19,22 +19,16 @@ namespace NetTools.Pages
         {
             return new IListItem[]
             {
-                new ListItem(new SpeedTestCommand())
-                {
-                    Title    = "Run Speedtest (CLI)",
-                    Subtitle = "Meet internetsnelheid",
-                    Icon     = new IconInfo("\uEC4A")
-                },
                 new ListItem(new SpeedTestPage())
                 {
-                    Title    = "Run SpeedTest (GUI)",
-                    Subtitle = "WinUI 3 in eigen venster",
+                    Title    = "Run SpeedTest",
+                    Subtitle = "Run SpeedTest with Ookla Speedtest service",
                     Icon     = new IconInfo("\uEC4A")
                 },
                 new ListItem(new IpPage())
                 {
                     Title    = "Check IP",
-                    Subtitle = "Toont intern en extern IP",
+                    Subtitle = "Display Network Info",
                     Icon     = new IconInfo("\uE701")
                 }
             };

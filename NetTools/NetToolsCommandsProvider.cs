@@ -18,7 +18,7 @@ public partial class NetToolsCommandsProvider : CommandProvider
             new CommandItem(new NetToolsPage())
             {
                 Title    = "NetTools",
-                Subtitle = "Verzameling van netwerktools",
+                Subtitle = "Collection for NetworkTools",
                 Icon     = new IconInfo("\uEC7A")
             }
         };
