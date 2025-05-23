@@ -18,4 +18,5 @@ Collection of network tools
 
 
 ## IP Info:
-![afbeelding](https://github.com/user-attachments/assets/55139ab4-607f-4030-bfb3-306f068e13fd)
+![afbeelding](https://github.com/user-attachments/assets/1ad1ca98-d207-4f61-91a4-31d7415c10e7)
+
