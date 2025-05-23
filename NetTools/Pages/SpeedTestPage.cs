@@ -18,7 +18,7 @@ namespace NetTools.Pages
         {
             Name = "SpeedTest";
             Title = "Speed Test";
-            Icon = new IconInfo("\uE8C8");
+            Icon = new IconInfo("\uEC4A");
         }
         
         public override IContent[] GetContent()
